@@ -4,7 +4,7 @@ Softy Pinko
 
 https://templatemo.com/tm-535-softy-pinko
 
-*/
+ */
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -22,17 +22,17 @@ Table of contents
 12. preloader
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
-/* 
+/*
 ---------------------------------------------
 reset
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -42,6 +42,24 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+/*--------------------------------------------------*/
+.logo-fit-inside{
+  top:0;
+  bottom:0;
+  margin:auto;
+  max-width: 100%;
+  max-height: 80%;
+  position: absolute;
+}
+
+.icon-resize{
+  top:0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*--------------------------------------------------*/
 
 .clearfix:after {
   content: ".";
@@ -101,11 +119,11 @@ ul {
   margin-bottom: 0px;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 html,
 body {
   background: #fff;
@@ -368,11 +386,11 @@ button.main-button:hover {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .header-area {
   position: fixed;
   top: 30px;
@@ -633,11 +651,11 @@ header
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 welcome
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .welcome-area {
   overflow: hidden;
   position: relative;
@@ -647,7 +665,7 @@ welcome
   background-image: url(../images/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; 
+  background-size: cover;
   height: 100vh;
 }
 
@@ -704,7 +722,7 @@ welcome
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
-   .welcome-area .header-text h1 {
+  .welcome-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
@@ -745,11 +763,11 @@ welcome
 }
 
 
-/* 
+/*
 ---------------------------------------------
 features
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .features-small-item {
   cursor: pointer;
   display: block;
@@ -835,11 +853,11 @@ features
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 parallax & home seperator
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .mini {
   min-height: 215px;
   overflow: hidden;
@@ -1105,11 +1123,11 @@ parallax & home seperator
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 team
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .team-item {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
@@ -1191,11 +1209,11 @@ team
   line-height: 26px;
 }
 
-/* 
+/*
 ---------------------------------------------
 pricing
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .pricing-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
@@ -1308,11 +1326,11 @@ pricing
   margin-top: 50px;
 }
 
-/* 
+/*
 ---------------------------------------------
 blog
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 .blog-post-thumb {
   text-align: center;
   margin-bottom: 30px;
@@ -1383,11 +1401,11 @@ blog
 }
 
 
-/* 
+/*
 ---------------------------------------------
 contact
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 
 #contact-us {
   padding: 160px 0px;
@@ -1436,11 +1454,11 @@ contact
   padding: 20px;
 }
 
-/* 
+/*
 ---------------------------------------------
 footer
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 footer {
   background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   padding-top: 30px;
@@ -1459,7 +1477,7 @@ footer .social li {
 
 footer .social li a {
   color: #9d5bd9;
-   text-align: center;
+  text-align: center;
   background-color: #fff;
   width: 36px;
   height: 36px;
@@ -1503,11 +1521,11 @@ footer .copyright {
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
-*/
+---------------------------------------------
+ */
 #preloader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #a759d1 0%, #8261ee 100%);
