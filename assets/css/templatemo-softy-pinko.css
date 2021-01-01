@@ -79,7 +79,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
 
 #timer{
     margin: auto;
-      width: 40%;
+    text-align: center;
 }
 
 .timerDiv {
