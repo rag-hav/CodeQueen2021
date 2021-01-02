@@ -52,31 +52,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
   position: absolute;
 }
 
-.icon-resize{
-  top:0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/*
-#days {
-  font-size: 200px;
-  color: #db4844;
-}
-#hours {
-  font-size: 150px;
-  color: #f07c22;
-}
-#minutes {
-  font-size: 100px;
-  color: #f6da74;
-}
-#seconds {
-  font-size: 50px;
-  color: #abcd58;
-}
-*/
-
 #timer{
     margin: auto;
     text-align: center;
@@ -1448,7 +1423,7 @@ contact
  */
 
 #contact-us {
-  padding: 160px 0px;
+  padding: 100px 0px;
 }
 
 #contact-us h5 {
