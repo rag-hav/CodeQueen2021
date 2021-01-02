@@ -47,9 +47,13 @@ figure, header, nav, section, article, aside, footer, figcaption {
   top:0;
   bottom:0;
   margin:auto;
-  max-width: 100%;
-  max-height: 80%;
   position: absolute;
+}
+
+@media (max-device-width: 600px) {
+  .logo-fit-inside {
+    text-align: center;
+  }
 }
 
 #timer{
@@ -629,7 +633,6 @@ header
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
-    margin-top: 80px !important;
     display: none;
     -webkit-transition: all 0s ease 0s;
     -moz-transition: all 0s ease 0s;
