@@ -7,11 +7,20 @@ function makeTimer1() {
         var now = (Date.parse(now) / 1000);
 
         var timeLeft = endTime - now;
+        if (timeLeft > 0)
 
-        var days = Math.floor(timeLeft / 86400);
-        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
-        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+        {
+                var days = Math.floor(timeLeft / 86400);
+                var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+        } else {
+                var days = 0;
+                var hours = 0;
+                var minutes = 0;
+                var seconds = 0;
+
+        }
 
         if (hours < "10") {
                 hours = "0" + hours;
@@ -44,10 +53,20 @@ function makeTimer() {
 
         var timeLeft = endTime - now;
 
-        var days = Math.floor(timeLeft / 86400);
-        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
-        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+        if (timeLeft > 0)
+
+        {
+                var days = Math.floor(timeLeft / 86400);
+                var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+        } else {
+                var days = 0;
+                var hours = 0;
+                var minutes = 0;
+                var seconds = 0;
+
+        }
 
         if (hours < "10") {
                 hours = "0" + hours;

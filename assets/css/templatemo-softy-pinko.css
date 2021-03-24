@@ -43,6 +43,150 @@ figure, header, nav, section, article, aside, footer, figcaption {
         outline: 0;
 }
 /*--------------------------------------------------*/
+
+
+.slideUpBtnB {
+        color:white;
+        padding: 12px 24px;
+        background-color: transparent;
+        border: 2px solid hsl(359, 100%, 100%);
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnB span {
+        display: inline-block;
+        transition: inherit;
+        color: hsl(359, 100%, 100%);
+}
+
+.slideUpBtnB:hover span {
+        opacity: 0;
+        transform: translateY(-100%)
+}
+
+.slideUpBtnB::before {
+        content: "";
+        background-color: hsl(359, 100%, 100%);;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        transition: inherit;
+        width: 100%;
+        transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnB::after {
+        content: 'Hover me';
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        color: hsl(243, 80%, 62%);
+        position: absolute;
+        top: 0;
+        transition: inherit;
+        transform: translateY(100%);
+        width: 100%;
+
+}
+
+.slideUpBtnB:hover::before {
+        transform: translateY(0) scale(3);
+        transition-delay: .025s;
+}
+
+.slideUpBtnB:hover::after {
+        opacity: 1;
+        color: hsl(243, 80%, 62%);
+        transform: translateY(0);
+}
+
+
+.slideUpBtnB.contestf::after {
+        content: 'Coming Soon';
+}
+
+.slideUpBtnB.formf::after {
+        content: 'To be eligigble for prizes';
+}
+
+.slideUpBtnW {
+        padding: 12px 24px;
+        background-color: transparent;
+        border: 2px solid hsl(243, 80%, 62%);
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnW span {
+        display: inline-block;
+        transition: inherit;
+        color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtnW:hover span {
+        opacity: 0;
+        transform: translateY(-100%)
+}
+
+.slideUpBtnW::before {
+        content: "";
+        background-color: hsl(243, 80%, 62%);;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        transition: inherit;
+        width: 100%;
+        transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnW::after {
+        content: 'Hover me';
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: inherit;
+        transform: translateY(100%);
+        width: 100%;
+
+}
+
+.slideUpBtnW:hover::before {
+        transform: translateY(0) scale(3);
+        transition-delay: .025s;
+}
+
+.slideUpBtnW:hover::after {
+        opacity: 1;
+        color: hsl(222, 100%, 95%);
+        transform: translateY(0);
+}
+
+
+.slideUpBtnW.hackerearth::after {
+        content: 'hackerearth';
+}
+
+.slideUpBtnW.form::after {
+        content: 'Google Form';
+}
+
+
+
 #sponsors{
         padding-top:20px;
 }
